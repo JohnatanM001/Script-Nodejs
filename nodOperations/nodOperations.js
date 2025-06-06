@@ -38,20 +38,20 @@ function contarNodos(nodo) {
 const valores = [10, 20, 30, 40, 50];
 const lista = crearListaDesdeArreglo(valores);
 
-console.log("📋 Lista enlazada:");
+console.log(" Lista enlazada:");
 imprimirLista(lista);
 
-console.time("⏱ Tiempo de conteo");
+console.time(" Tiempo de conteo");
 const totalNodos = contarNodos(lista);
-console.timeEnd("⏱ Tiempo de conteo");
+console.timeEnd(" Tiempo de conteo");
 
 console.log("Total de nodos:", totalNodos);
 
 // Prueba con lista vacía
 const listaVacia = crearListaDesdeArreglo([]);
 
-console.time("⏱ Tiempo de conteo en lista vacía");
+console.time(" Tiempo de conteo en lista vacía");
 const totalVacios = contarNodos(listaVacia);
-console.timeEnd("⏱ Tiempo de conteo en lista vacía");
+console.timeEnd(" Tiempo de conteo en lista vacía");
 
 console.log("Total de nodos en lista vacía:", totalVacios);
